@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_description_layout"
+        android:layout_width="296dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_place"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken_karahi_lahore" />
+
+    <TextView
+        android:id="@+id/tv_description_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textColor="#0C0000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_short_des"
+        app:layout_constraintEnd_toEndOf="@+id/img_description_layout"
+        app:layout_constraintStart_toStartOf="@+id/img_description_layout"
+        app:layout_constraintTop_toBottomOf="@+id/img_description_layout" />
+
+    <TextView
+        android:id="@+id/tv_description_short_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/textview"
+        android:textColor="#100101"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_author"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description_place"
+        app:layout_constraintStart_toStartOf="@+id/tv_description_place"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_place" />
+
+    <TextView
+        android:id="@+id/tv_description_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textColor="#0C0000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description_short_des"
+        app:layout_constraintStart_toStartOf="@+id/tv_description_short_des"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_short_des" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:progressTint="#F6CA07"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_long_des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_author" />
+
+    <TextView
+        android:id="@+id/tv_description_long_des"
+        android:layout_width="297dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/paint_text_border_1"
+        android:text="@string/_new"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:scrollbars = "vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_description_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    <Button
+        android:id="@+id/btn_description_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        android:backgroundTint="#92AEACAC"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#0E0101"
+        android:textColorLink="#0E0101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_long_des" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/by"
+        android:textColor="#070000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_description_author"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#131212"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/click_on_image_to_enlarge"
+        android:textColor="#100101"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/expanded_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

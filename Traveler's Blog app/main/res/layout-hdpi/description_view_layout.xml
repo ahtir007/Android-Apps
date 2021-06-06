@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_description_layout"
+        android:layout_width="324dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_place"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken_karahi_lahore" />
+
+    <TextView
+        android:id="@+id/tv_description_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textview"
+        android:textColor="#0C0000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_short_des"
+        app:layout_constraintEnd_toEndOf="@+id/img_description_layout"
+        app:layout_constraintStart_toStartOf="@+id/img_description_layout"
+        app:layout_constraintTop_toBottomOf="@+id/img_description_layout" />
+
+    <TextView
+        android:id="@+id/tv_description_short_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textColor="#100101"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_author"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description_place"
+        app:layout_constraintStart_toStartOf="@+id/tv_description_place"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_place" />
+
+    <TextView
+        android:id="@+id/tv_description_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textColor="#0C0000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description_short_des"
+        app:layout_constraintStart_toStartOf="@+id/tv_description_short_des"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_short_des" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:progressTint="#F6CA07"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description_long_des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_author"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_description_long_des"
+        android:layout_width="380dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/paint_text_border_1"
+        android:scrollbars="vertical"
+        android:text="@string/_new"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_description_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    <Button
+        android:id="@+id/btn_description_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:backgroundTint="#92AEACAC"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#0E0101"
+        android:textColorLink="#0E0101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_long_des" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/by"
+        android:textColor="#0C0000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_description_author"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0B0A0A"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_on_image_to_enlarge"
+        android:textColor="#0E0000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_description_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/expanded_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
