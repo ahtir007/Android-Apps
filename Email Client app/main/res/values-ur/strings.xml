@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ایف سی سی میل کلائنٹ</string>
+    <string name="fcc_email">ایف سی سی میل کلائنٹ</string>
+    <string name="user_name">صارف کا نام</string>
+    <string name="password">پاس ورڈ</string>
+    <string name="login">لاگ ان کریں</string>
+    <string name="register">رجسٹر کریں</string>
+    <string name="todo">سب کچھ</string>
+    <string name="register_nuser">صارف کا اندراج کریں</string>
+    <string name="confirm_password">پاس ورڈ کی تصدیق کریں</string>
+    <string name="choose_picture">تصویر کا انتخاب کریں</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_folder">فولڈر منتخب کریں</string>
+    <string name="inbox">ان باکس</string>
+    <string name="mark_unread">نہ پڑھے ہوئے کو نشان لگائیں</string>
+    <string name="delete">حذف کریں</string>
+    <string name="farhad">Farhad</string>
+    <string name="documents_required">Documents required!</string>
+    <string name="send_to_spam">اسپام بھیجیں</string>
+    <string name="compose">تحریر کریں</string>
+    <string name="reply">جواب دیں</string>
+    <string name="mark_as_read">پڑھیں کے بطور نشان زد کریں</string>
+    <string name="email_subject">ای میل کے موضوع</string>
+    <string name="to">To:</string>
+    <string name="send">بھیجیں</string>
+    <string name="draft">"ڈرافٹ "</string>
+    <string name="message_body">پیغام باڈی</string>
+    <string name="discard_draft">ڈرافٹ خارج کردیں</string>
+    <string name="not_spam">اسپام نہیں</string>
+    <string name="compose_mail">میل تحریر کریں</string>
+    <string name="logout">لاگ آوٹ</string>
+    <string name="save_draft">مسودے کو بچانے کے</string>
+    <string name="spam">فضول کے</string>
+    <string name="trash">کوڑے دان</string>
+</resources>

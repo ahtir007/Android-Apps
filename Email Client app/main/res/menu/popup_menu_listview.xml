@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mi_not_spam"
+        android:title="@string/not_spam" />
+    <item
+        android:id="@+id/mi_draft"
+        android:title="@string/discard_draft" />
+    <item
+        android:id="@+id/mi_read"
+        android:title="@string/mark_as_read" />
+    <item
+        android:id="@+id/mi_unread"
+        android:title="@string/mark_unread" />
+    <item
+        android:id="@+id/mi_delete"
+        android:title="@string/delete" />
+    <item
+        android:id="@+id/mi_send_to_spam"
+        android:title="@string/send_to_spam" />
+</menu>
